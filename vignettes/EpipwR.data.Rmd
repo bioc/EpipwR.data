@@ -1,0 +1,47 @@
+---
+title: 'EpipwR.data: Reference data for EpipwR'
+output:
+  pdf_document: default
+  html_document: default
+date: "2024-04-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+EpipwR.data is used to access reference data from ExperimentHub for the EpipwR package.
+
+# Data
+
+The data sets accessed through this package are based on source data publicly available on the Gene expression omnibus. The authors would like to acknowledge the work done by Graw et. al. (2019) in identifying the source data sets for EWAS power analyses. EpipwR uses beta distribution parameters $\alpha$,$\beta$, estimated through method of moments. Specifically, beta values are calculated from the source data set for every subject/CpG combination. Sample means and variances are then calculated for each CpG site. Finally, these are converted to $\alpha$,$\beta$, using the below formulas:
+
+$\hat{\alpha}=\frac{\bar{x}^2(1-\bar{x})}{s^2}-\bar{x}$
+
+$\hat{\beta}=\frac{\hat{\alpha}(1-\bar{x})}{\bar{x}}$
+
+The below table has access information for each of the source data sets.
+
+```{=tex}
+\begin{table}[h]
+\begin{tabular}{lll}
+\hline
+Tissue Type              & Accession Number & Reference                                 \\\hline\hline
+Saliva                   & GSE92767         & (Hong et al., 2017)                       \\
+Lymphoma                 & GSE42372         & (Matsunaga et al., 2014)                  \\
+Placenta                 & GSE62733         & (Kawai et al., 2015)                      \\
+Liver                    & GSE61258         & (Horvath et al., 2014)                    \\
+Colon                    & GSE77718         & (McInnes et al., 2017)                    \\
+Blood (Adults)           & GSE42861         & (Kular et al., 2018; Y. Liu et al., 2013) \\
+Blood (Children)         & GSE83334         & (Urdinguio et al., 2016)                  \\
+Blood (Newborns)         & GSE82273         & (Markunas et al., 2016)                   \\
+Cord-blood (whole blood) & GSE69176         &                                           \\
+Cord-blood (PBMC)        & GSE110128        & (Langie et al., 2018)                     \\
+Adult (PBMC)             & GSE67170         & (Y. H. Zhang et al., 2018)                \\
+Sperm                    & GSE114753        & (Jenkins et al., 2017)                    \\ \hline
+\end{tabular}
+\end{table}
+```
+# References
+
+Graw, S., Henn, R., Thompson, J. A., & Koestler, D. C. (2019). pwrEWAS: a user-friendly tool for comprehensive power estimation for epigenome wide association studies (EWAS). *BMC Bioinformatics*, 20(1), 218--218.
