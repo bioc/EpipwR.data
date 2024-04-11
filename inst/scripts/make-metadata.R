@@ -30,7 +30,7 @@ df[1:12,] = matrix(c("Saliva", "Lymphoma", "Placenta", "Liver", "Colon", "Blood 
                      rep("Jackson Barth <Jackson_Barth@Baylor.edu>",12),
                      rep("matrix",12),
                      rep("Rda",12),
-                     paste("EpipwR_data/", c("ds1_ab.rdata", "ds2_ab.rdata", "ds3_ab.rdata", "ds4_ab.rdata", "ds5_ab.rdata", "ds6_ab.rdata", "ds7_ab.rdata", "ds8_ab.rdata", "ds9_ab.rdata", "ds10_ab.rdata", "ds11_ab.rdata", "ds12_ab.rdata"), sep = "")),
+                     paste("EpipwR.data/", c("ds1_ab.rdata", "ds2_ab.rdata", "ds3_ab.rdata", "ds4_ab.rdata", "ds5_ab.rdata", "ds6_ab.rdata", "ds7_ab.rdata", "ds8_ab.rdata", "ds9_ab.rdata", "ds10_ab.rdata", "ds11_ab.rdata", "ds12_ab.rdata"), sep = "")),
 
                    nrow = 12, ncol = 16, byrow = FALSE
 )
