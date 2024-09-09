@@ -1,8 +1,10 @@
 ---
 title: 'EpipwR.data: Reference data for EpipwR'
-output:
-  html_document: default
-  pdf_document: default
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EpipwR.data: Reference data for EpipwR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 date: "2024-04-09"
 ---
 
