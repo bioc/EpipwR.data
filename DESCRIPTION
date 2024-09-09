@@ -2,8 +2,9 @@ Package: EpipwR.data
 Type: Package
 Title: EpipwR.data: Reference data for EpipwR
 Version: 0.1.0
-Author: Jackson Barth
-Maintainer: Jackson Barth <Jackson_Barth@Baylor.edu>
+Authors@R:
+  c(person(given="Jackson", family="Barth", role=c("aut","cre"), email="Jackson_Barth@Baylor.edu"),
+    person("Austin", "Reynolds", role="aut"))
 Description: This package provides reference data for EpipwR.
     EpipwR is a fast and efficient power analysis for continuous phenotypes
     of epigenomic-wide association studies.
