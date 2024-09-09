@@ -12,5 +12,8 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     ExperimentHub
+Suggests:
+  knitr,
+  rmarkdown
 biocViews: ExperimentHub, MethylationArrayData, MicroarrayData, TissueMicroarrayData, Tissue
-
+VignetteBuilder: knitr
