@@ -1,20 +1,25 @@
 Package: EpipwR.data
 Type: Package
 Title: EpipwR.data: Reference data for EpipwR
-Version: 0.1.0
+Version: 0.99.0
 Authors@R:
-  c(person(given="Jackson", family="Barth", role=c("aut","cre"), email="Jackson_Barth@Baylor.edu"),
+  c(person(given="Jackson", family="Barth", role=c("aut","cre"), email="Jackson_Barth@Baylor.edu",
+  comment=c(ORCID = "0009-0009-6307-9928")),
     person("Austin", "Reynolds", role="aut"))
 Description: This package provides reference data for EpipwR.
-    EpipwR is a fast and efficient power analysis for continuous phenotypes
-    of epigenomic-wide association studies.
+    EpipwR is a fast and efficient power analysis for continuous and binary phenotypes
+    of epigenomic-wide association studies. This package is only meant to be used in conjunction
+    with EpipwR.
 License: Artistic-2.0
 Encoding: UTF-8
-LazyData: true
+LazyData: false
+URL: https://github.com/jbarth216/EpipwR.data
+BugReports: https://github.com/jbarth216/EpipwR.data
 Imports: 
     ExperimentHub
 Suggests:
   knitr,
-  rmarkdown
-biocViews: ExperimentHub, MethylationArrayData, MicroarrayData, TissueMicroarrayData, Tissue
+  rmarkdown,
+  sessioninfo
+biocViews: ExperimentHub, MethylationArrayData, MicroarrayData, TissueMicroarrayData, Tissue, ExperimentData
 VignetteBuilder: knitr
