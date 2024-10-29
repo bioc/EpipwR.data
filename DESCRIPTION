@@ -1,7 +1,7 @@
 Package: EpipwR.data
 Type: Package
 Title: EpipwR.data: Reference data for EpipwR
-Version: 1.0.0
+Version: 1.1.0
 Authors@R:
   c(person(given="Jackson", family="Barth", role=c("aut","cre"), email="Jackson_Barth@Baylor.edu",
   comment=c(ORCID = "0009-0009-6307-9928")),
